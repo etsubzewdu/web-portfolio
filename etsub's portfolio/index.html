@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Personal Portfolio Website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/2b05088d83.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div id="header">
+    <div class="container">
+      <nav>
+        <img src="" class="logo">
+        <ul id="sidemenu">
+          <li><a href="#header">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#languages">Languages</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <i class="fas fa-times" onclick="closemenu()"></i>
+        </ul>
+        <i class="fas fa-bars" onclick="openmenu()"></i>
+      </nav>
+      <div class="header-text">
+        <p>Web Developer</p>
+        <h1>Hello I'm <span>Etsub zewdu</span><br /></h1>
+      </div>
+      
+      
+    </div>
+    
+  </div>
+  <!-- -----------------------------About me------------------------- -->
+  <div id="about">
+    <div class="container">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image/my pic.jpg">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>I'm etsub zwdu, debrebran university student i am an energetic and imaginative young web developer who is able to 
+            work alongside other talented IT professionals in creating websites 
+            to the very highest standards.</p>
+
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('achievements')">Achievements</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+            <ul>
+              <li><span>web developement</span>
+                <p>developing websites</p>
+              </li>
+              <li> </li>
+              <li> </li>
+              <li><span>2 Years Coding Experience</span>
+                <p>learning code for last 2 years and know 6 coding languages</p>
+              </li>
+              <li> </li>
+              <li> </li>
+              <li><span>Backend Web Development</span>
+                <p>Build backend of websites using Java</p>
+              </li>
+            </ul>
+          </div>
+          <div class="tab-contents" id="achievements">
+            <ul>
+              
+              
+              <li><span>Experience</span>
+                <p>got 2 years of experience; currently learning Java,  html,css,javascipt, php
+                  in Debre brhan university.</p>
+              </li>
+
+            </ul>
+          </div>
+          <div class="tab-contents" id="education">
+            <ul>
+              <li><span>2022-2024</span><br />Debre Birhan university software engineering student</li>
+            </ul>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- ------------------------Languages------------------------------ -->
+  <div id="languages">
+    <div class="container">
+      <h1 class="sub-title">My coding Languages</h1>
+      <div class="languages-list">
+        <div>
+          <i class="fa-brands fa-java"></i>
+          <h2>JAVA</h2>
+          <p>Java is a versatile, object-oriented programming language known for its portability and wide usage in
+            building diverse applications across different platforms.</p>
+          <a href="https://en.wikipedia.org/wiki/Java_(programming_language)">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-python"></i>
+          <h2>Python</h2>
+          <p>Python is a high-level, versatile programming language renowned for its readability and simplicity, favored
+            for its wide range of applications from web development to data analysis.</p>
+          <a href="https://en.wikipedia.org/wiki/Python_(programming_language)">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-html5"></i>
+          <h2>HTML</h2>
+          <p>HTML (Hypertext Markup Language) is a standard language used for creating and structuring the content of
+            web pages by using a system of tags to define elements such as headings, paragraphs, links, and images.</p>
+          <a href="https://en.wikipedia.org/wiki/HTML">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-css3-alt"></i>
+          <h2>CSS</h2>
+          <p>CSS (Cascading Style Sheets) is a stylesheet language utilized to control the visual presentation and
+            layout of HTML elements in web pages, enhancing their aesthetics and design.</p>
+          <a href="https://en.wikipedia.org/wiki/CSS">Learn more</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-square-js"></i>
+          <h2>JavaScript</h2>
+          <p>JavaScript is a versatile programming language primarily used for adding interactivity, dynamic behavior,
+            and complex functionality to web pages, making them more engaging and responsive.</p>
+          <a href="https://en.wikipedia.org/wiki/JavaScript">Learn more</a>
+        </div>
+        <div>
+          <i class="c++"><img src="image/plus_logo_c_icon_214621.png"></i>
+          <h2>C++</h2>
+          <p>C++ is a powerful, object-oriented programming language widely employed for developing efficient software
+            and systems, offering both high-level abstractions and low-level memory manipulation capabilities.</p>
+          <a href="https://en.wikipedia.org/wiki/C%2B%2B">Learn more</a>
+        </div>
+        <button class="" border="none"
+        background="#fca61f" 
+        color="#fff" 
+        font-size="1.2rem" >
+         
+          
+        </button>
+        
+      </div>
+      <button class="c-btn h-btn mt-3 py-3 px-5 rounded-pill">
+       <!-- here download attribute is used for adding download functionality to button  -->
+          <a
+            href="CV.pdf"
+            download="SampleCV"
+            style="text-decoration: none;color:purple;"
+            >Download CV</a>
+          </button>
+    </div>
+  </div>
+  <!-- ------------------------Projects------------------------------ -->
+  <div id="projects">
+    <div class="container">
+      <h1 class="sub-title">My favorite Projects</h1>
+      <div class="project-list">
+        <div class="projects">
+          <img src="image/my web 1.jpg">
+          <div class="layer">
+            <h3>shopping app</h3>
+            <p>browse, select, and purchase products or services from the comfort of their homes or anywhere with an internet connection.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="image/web app image 1.jpg">
+          <div class="layer">
+            <h3>hair care app</h3>
+            <p>to providing information, products, and tips related to hair health, styling, and maintenance.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="projects">
+          <img src="image/my web app 3.png">
+          <div class="layer">
+            <h3>art app</h3>
+            <p>designed to inspire creativity, facilitate art creation, and provide tools for artists of all levels to express themselves.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- -----------------------------contact------------------------- -->
+  <div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-envelope"></i> etsubzewdu0@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i> +251 978 15 4853</p>
+          <div class="social-links mt-5" data-aos="fade-up">
+            <a href="https://www.instagram.com/etsub4318/"><i class="fa-brands fa-instagram"></i> </a>
+            <a href="https://t.me/Makileba21"><i class="fa-solid fa-paper-plane"></i> </a>
+            <a href="https://github.com/etsubzewdu"><i class="fa-brands fa-github"></i> </a>
+
+          </div>
+        </div>
+        <div class="contact-right">
+          <form>
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+        </div>
+        <!--<div class="social-links mt-5" data-aos="fade-up">
+          <button href="" class="rounded-pill dribble">
+            <i class="bi bi-dribbble"></i>
+          </button>/i>-->
+          
+
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    var tablinks = document.getElementsByClassName('tab-links');
+    var tabcontents = document.getElementsByClassName('tab-contents');
+
+    function opentab(tabname) {
+      for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+      }
+      for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu() {
+      sidemenu.style.right = "0";
+    }
+    function closemenu() {
+      sidemenu.style.right = "-200px";
+    }
+  </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
